@@ -1,0 +1,8 @@
+numbers = [10, 20, 30, 40, 50]
+
+print("Original list:", numbers)
+
+new_value = 99
+numbers[2] = new_value
+
+print("Updated list:", numbers)

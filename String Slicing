@@ -1,0 +1,5 @@
+input_string = input("Enter a string: ")
+
+sliced_string = input_string[:5]
+
+print("Sliced string:", sliced_string)
