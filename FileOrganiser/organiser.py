@@ -5,6 +5,7 @@ import os
 
 
 def organize_files(directory):
+    assert os.path.exsists(directory), "Directory does not exist!"
     # Detect the operating system using os.name
     is_windows = os.name == 'nt'
     # Define file categories and corresponding file extensions
@@ -54,7 +55,9 @@ def organize_files(directory):
                 else:
                     os.system(f'mv "{file_path}" "{misc_destination}"')
     print("Files have been organized!")#Example usage
-    if name == "main":
+
+
+if __name__ == "__main__":
     user_input = input("Enter the directory path to organize: ")
     if os.path.exists(user_input):
         organize_files(user_input)
