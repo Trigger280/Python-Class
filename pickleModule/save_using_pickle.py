@@ -5,7 +5,7 @@ list1=[1,2,3,4,5,6]#object to be saved
 filename="data.pickle"#fileName
 #saving object using pickle module
 fileHandle=open(filename, "wb")
-pickle.dump(list1, fileHandle)
+pickle.dump(list1, fileHandle)#dump method of pickle module is used to save object in to file
 fileHandle.close()
 # try:
 #     with open(filename,"wb") as fileHandle:
